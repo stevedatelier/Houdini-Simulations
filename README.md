@@ -1,2 +1,2 @@
 # Houdini-Simulations
-Collection of setups using Houdini, tips, tricks and notes that you may find useful
+Find my Houdini notes and some of the setups I used to create volumes, oceans, fluid and more. Every effort has been made to credit external sources.
