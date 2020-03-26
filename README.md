@@ -20,13 +20,5 @@ POPGrains/get_neighbours:
     if (!explicitcollide && find(@ec, ptj) >= 0)
         continue;
     
-    append(neighbors, ptj);
-    
-    // here we can create additional output variables
-// however we cannot write to read_only variables (which
-// are not exported), therefore for loading $dir I create
-// direction variable and for loading $noise noise_in variable
-
-$N = normalize(P);
-vector direction = normalize(dir);
+   append(neighbors, ptj);
     
