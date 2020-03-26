@@ -15,7 +15,7 @@ Each point will search for a nearby point that is not a member of its own piece.
 
 POPGrains/get_neighbours:
 
-    _// Do not potentiall collide with explicit constraints_
+  *// Do not potentiall collide with explicit constraints*
     _// to allow us to over-pack particles._
     if (!explicitcollide && find(@ec, ptj) >= 0)
         continue;
