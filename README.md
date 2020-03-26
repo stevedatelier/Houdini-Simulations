@@ -22,3 +22,11 @@ POPGrains/get_neighbours:
     
     append(neighbors, ptj);
     
+    // here we can create additional output variables
+// however we cannot write to read_only variables (which
+// are not exported), therefore for loading $dir I create
+// direction variable and for loading $noise noise_in variable
+
+$N = normalize(P);
+vector direction = normalize(dir);
+    
