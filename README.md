@@ -14,9 +14,9 @@ Glue
 Each point will search for a nearby point that is not a member of its own piece. It will construct a distance constraint holding it to that point. This is useful for building systems that automatically glue together by proximity, especially when combined with breaking.
 
 POPGrains/get_neighbours:
-
-  *// Do not potentiall collide with explicit constraints*
-    _// to allow us to over-pack particles._
+*
+    // Do not potentiall collide with explicit constraints
+    // to allow us to over-pack particles.*
     if (!explicitcollide && find(@ec, ptj) >= 0)
         continue;
     
