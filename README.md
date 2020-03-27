@@ -357,6 +357,64 @@ to_flipbook=False, quality=2, ignore_inputs=False, method=RopByRop, ignore_bypas
 
 Physically based rendering/raytracing (PBR) 
 should be your default choice for almost any rendering. PBR simulates real-world light, making it easier to understand. With PBR you get shadows, reflections, secondary bounces, and so on "for free" instead of having to use workarounds or write complex shaders. You can also repurpose traditional methods to achieve lighting effects, for example putting cucoloris or gobo geometry in front of a light, or using a very powerful light to "blow out" part of the scene
+
+The raytracing engine will see the shader as:
+
+```
+surface
+clay(vector diff=1; float rough=.1; vector Cd=1)
+{
+    vector        nml;
+
+    nml = frontface(normalize(N), I);
+    Cf  = diffuse(nml, -normalize(I), rough);
+    Cf *= Cd * diff;
+}
+The PBR engine will see the shader as:
+
+surface
+clay(vector diff=1; float rough=.1; vector Cd=1)
+{
+    F = (Cd * diff) * diffuse();
+}
+
+```
+
+The two rendering engines will often render nearly identical images since both engines often make use of the `pbrlighting()` shader. This shader takes a BSDF input and computes the resulting color.
+
+This can be seen in the `plastic.vfl` shader that’s shipped with Houdini. The shader looks something like:
+
+```
+import pbrlighting;
+surface
+plastic(
+    vector diff=0.8;
+    vector spec=0.2;
+    float rough=0.2;
+    vector Cd=1;
+    ...
+    export vector direct=0;
+    export vector indirect=0;
+    export vector indirect_emission=0;
+    ...
+)
+{
+    float        exponent = 1.0 / rough;
+
+    F = (Cd * diff) * diffuse() + spec * phong(exponent);
+
+    pbrlighting(
+            "direct", direct,
+            "indirect", indirect,
+            "indirect_emission", indirect_emission,
+            ...
+            "inF", F);
+
+    Cf = direct + indirect + indirect_emission;
+}
+
+```
+
 &nbsp;
 
 #### Dicing:shading quality
