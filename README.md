@@ -152,6 +152,26 @@ All eligible whitewater particles are collected into the controldensity_candidat
 
 &nbsp;
 
+## Whitewater / Bind Arrays
+
+You can bind arrays by appending `[]`, as in
+
+```i[]@connected_pts = neighbours(0, @ptnum);```
+For example, the following code loads the `foo` attribute as a vector and copies it to the `P` (position) attribute. You don’t need to specify the type of the `P` attribute because it’s one of the known attributes Houdini casts automatically.
+
+```
+@P = v@foo;
+
+```
+The following code sets the `x` component of the `Cd` attribute to the value of the whitewater attribute. You don’t need to specify the type of the `Cd` attribute because it’s one of the known attributes. You don’t need to specify the type of the `whitewater` attribute because it’s a float and unknown attributes are cast as float automatically.
+
+```
+@Cd.x = @whitewater;
+
+```
+
+&nbsp;
+
 #### Enforce Prototypes	
 
 ```
@@ -263,25 +283,6 @@ Zero Centered Perlin      (string value "correctnoise")
 
 &nbsp;
 
-## Bind Arrays
-
-You can bind arrays by appending [], as in
-
-i[]@connected_pts = neighbours(0, @ptnum);
-For example, the following code loads the foo attribute as a vector and copies it to the P (position) attribute. You don’t need to specify the type of the P attribute because it’s one of the known attributes Houdini casts automatically.
-
-```
-@P = v@foo;
-
-```
-The following code sets the x component of the Cd attribute to the value of the whitewater attribute. You don’t need to specify the type of the Cd attribute because it’s one of the known attributes. You don’t need to specify the type of the whitewater attribute because it’s a float and unknown attributes are cast as float automatically.
-
-```
-@Cd.x = @whitewater;
-
-```
-
-&nbsp;
 
 #### Reading and modifying the voxel value
 
@@ -321,7 +322,7 @@ vector mapToScreen(vector NDC_P)
 
 #### Blurring attributes with vex and point clouds
 
-You have Cd on a grid, you want to blur it. One way is to iterate through each point, look at its neighbours, add up the result, and divide by the number of neighbours. Because it's a grid, and the point numbering is consistent, you could do something like
+You have `Cd` on a grid, you want to blur it. One way is to iterate through each point, look at its neighbours, add up the result, and divide by the number of neighbours. Because it's a grid, and the point numbering is consistent, you could do something like
 
 ```
 int width = 50; // say the grid is 50 points wide
@@ -334,7 +335,7 @@ vector bottom = point(0,'Cd', @ptnum-50);
 
 ```
 
-Works, but clunky, and it only works with a grid. Using the neighbour() and neighbourcount() functions is more generic (borrowed from odforce post):
+Works, but clunky, and it only works with a grid. Using the `neighbour()` and `neighbourcount()` functions is more generic (borrowed from odforce post):
 
 ```
 int neighbours = neighbourcount(0, @ptnum);
