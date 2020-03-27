@@ -351,8 +351,6 @@ to_flipbook=False, quality=2, ignore_inputs=False, method=RopByRop, ignore_bypas
 
 ## Speed-up Render time
 
-<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3101)_render-setup.png" width="80%">.
-
 
 
 #### Opt for Physically Based Rendering
@@ -372,6 +370,8 @@ Dicing > Shading Quality: Dial your number to as low as 0.25
 #### Pixel samples
 
 Keep in mind the higher these two numbers, the slower your render time will be. Pixel samples serve as a global multiplier for the adjustments you make below. It isn't necessary to play with these since we are already working with the controls below.
+
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3101)_render-setup.jpg" width="50%">.
 
 &nbsp;
 
@@ -399,11 +399,15 @@ I always select 0.07-0.05 for volumes, 0.05 for heavy scenes of all kind, and 0.
 
 Turn it on.
 
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/VolumeSamplingStochastic.jpg" width="50%">.
+
 &nbsp;
 
 #### Refract limit
 
 2 or 4 will work.
+
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/RefractLimit.jpg" width="50%">.
 
 &nbsp;
 
