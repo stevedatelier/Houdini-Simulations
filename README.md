@@ -279,18 +279,29 @@ Zero Centered Perlin      (string value "correctnoise")
 
 # Noise and render speed: Mantra
 
-Eliminate noise and speed up your renders: Proven method for Mantra
+Reduce noise and speed up your renders: A proven method for Mantra
 
 &nbsp;
 
 ## Reduce and eliminate noise
 
 &nbsp;
-Mantra limit parameters
-Understanding the difference between direct and indirect lighting. 
-Eliminate firefly noise: Avoid using sunlights
-(Reduce noise significantly)
-Results
+
+#### Mantra limit parameters
+
+&nbsp;
+
+#### Understanding the difference between direct and indirect lighting. 
+&nbsp;
+
+#### Eliminate firefly noise: Avoid using sunlights
+&nbsp;
+
+#### Reduce noise significantly
+
+&nbsp;
+
+#### Results
 
 
 
