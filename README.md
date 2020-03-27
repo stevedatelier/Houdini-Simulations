@@ -294,6 +294,8 @@ Reduce noise and speed up your renders: A proven method for Mantra
 
 These controls are on the Limits tab of the Mantra render node. I would leave these parameters to there default values except for diffuse limit and volume limit (if there actually volumes are in your scene). Raise diffuse limit to 4. You can also rais color limit to a number like 10 or more, but keep in mind that could increase render time.
 
+img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/BasicRayTracing_1.png" alt="Flowers in Chania" width="460" height="345">
+
 &nbsp;
 
 #### Understanding the difference between direct and indirect lighting. 
