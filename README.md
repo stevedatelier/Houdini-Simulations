@@ -289,57 +289,135 @@ Reduce noise and speed up your renders: A proven method for Mantra
 
 #### Mantra limit parameters
 
+These controls are on the Limits tab of the Mantra render node. I would leave these parameters to there default values except for diffuse limit and volume limit (if there actually volumes are in your scene). Raise diffuse limit to 4. You can also rais color limit to a number like 10 or more, but keep in mind that could increase render time.
+
 &nbsp;
 
 #### Understanding the difference between direct and indirect lighting. 
+
+Indirect Rays can be described as rays which deal with objects and their surface properties. This generally means that rays travel from some position in the scene in directions determined by the shader attached to the object. Refraction rays will travel “through” objects, Reflection Rays will bounce, and Diffuse Rays will scatter in a random direction within a hemispherical distribution. 
+
+Direct lighting gives you a darker image with more pronounced shadows.
+
+
 &nbsp;
 
 #### Eliminate firefly noise: Avoid using sunlights
+
+If you have to use a sun-like source, I suggest faking it with an area lights. The Houdini sunlight creates big white dots on your render which I refer to as fireflies. 
+
+The Fix: The best way to remove those white dots is to avoid using sun lights altogether.
+
 &nbsp;
 
 #### Reduce noise significantly
+
+When using HDR/Envlight, you surround the entirety of your scene with a light that has a very limited sample count and unfortunately some brights spots which Mantra can't always calculate. 
+
+The Fix: Switch the "rendering node" dropdown option to "raytracing" or "direct lighting" in your envlight node. Note: Only one of them will have the desired results, so make two render tests.
 
 &nbsp;
 
 #### Results
 
 
-
-## Speed-up Render time
-
 &nbsp;
 
 #### hou.RopNode class
+
+Python Scripting  hou 
+
+```
+render(frame_range=(), res=(), output_file=None, output_format=None, 
+to_flipbook=False, quality=2, ignore_inputs=False, method=RopByRop, ignore_bypass_flags=False, ignore_lock_flags=False, verbose=False, output_progress=False)
+
+```
+ 
 &nbsp;
 
-#### Physically based rendering
+
+## Speed-up Render time
+
+
+#### Opt for Physically Based Rendering
+
+Physically based rendering/raytracing (PBR) 
+should be your default choice for almost any rendering. PBR simulates real-world light, making it easier to understand. With PBR you get shadows, reflections, secondary bounces, and so on "for free" instead of having to use workarounds or write complex shaders. You can also repurpose traditional methods to achieve lighting effects, for example putting cucoloris or gobo geometry in front of a light, or using a very powerful light to "blow out" part of the scene
 &nbsp;
 
 #### Dicing:shading quality
+
+This is the most important part, the part you need to remember. The absolute best way to significantly reduce render times is by adjusting shading quality. The lower the number, the faster your render. There were no noticeable differences in my 2K rendrers after I lowered shading quality. 
+
+Dicing > Shading Quality: Dial your number to as low as 0.25
+
 &nbsp;
 
 #### Pixel samples
+
+Keep in mind the higher these two numbers, the slower your render time will be. Pixel samples serve as a global multiplier for the adjustments you make below. It isn't necessary to play with these since we are already working with the controls below.
+
 &nbsp;
 
 #### Max Ray samples
+
+Try 10, 100, or even 300. Make several renders tests. One of them could cost you a few minutes. I've had excellent results with 100.
+
 &nbsp;
 
 #### Noise level
+
+In the physical world. The noise level of real film grains is 0.05 or 0.08. Noise will affect both the quality and speed of your renders. 
+
+I always select 0.07-0.05 for volumes, 0.05 for heavy scenes of all kind, and 0.03-0.01 when I can spare the time. With render images of 4k or 5k for resolution, going below 0.01 is silly. 
+
 &nbsp;
 
 #### Light quality. All= 1
+
+1 is good enough.
+
 &nbsp;
 
 #### Scholastic samples
+
+Turn it on.
+
 &nbsp;
 
 #### Refract limit
+
+2 or 4 will work.
+
 &nbsp;
 
 #### PBR shading
+
+You can add bsdf values together and scale them by vectors or floats. Multiplying a BSDF by a color vector makes the surface reflect that color.
+
+```
+    // Multiply the diffuse (hemispherical) BSDF by the texture color,
+    // multiply a phong BSDF by 0.5, and then add the two BSDFs together
+    F = texture(map) * diffuse() + 0.5 * phong(20);
+    // Red diffuse surface
+    F = diffuse() * {1.0, 0, 0}
+
+```
+
 &nbsp;
 
 #### Shading quality multiplier
+
+Dicing
+
+Houdini render property `vm_shadingfactor`
+`IFD` property `renderer:shadingfactor`
+A global multiplier on all per-object shading quality (vm_shadingquality) parameters in the scene. This parameter can be used to globally increase or decrease shading quality. The shading quality used for an object is determined by…
+
+```
+shadingquality = object:shadingquality * renderer:shadingfactor
+
+```
 
 &nbsp;
 
