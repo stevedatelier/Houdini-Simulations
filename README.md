@@ -1,14 +1,14 @@
-# Houdini-Simulations
+# Houdini Physical Simulations
 
-Find my notes and some of the code snippets, setups I used to create volumes, oceans, fluid and more inside SideFX Houdini
+## Find my notes and some of the code snippets, setups I used to create volumes, oceans, fluid and more inside SideFX Houdini
 
 ###### by Steve d'Atelier
 
-## How to use
+### How to use
 
 You can clone, or directly download this repository. It contains examples [...].hip and vex/myLib.h files which are helpful for you to expand on and improve. I recommend you check the README.md file for helpful comments and explanations. Where necessary I include related functions from myLib.h or attach screenshots. I have logged some simulations there as well as important tips on how to significantly reduce noise in your render and greatly improve Mantra rendering speed. Some of the examples listed are influenced by real-world physical observations. 
 
-# Physical Simulations
+### Topics
 
 ## Vellum grains
 
