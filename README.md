@@ -294,7 +294,7 @@ Reduce noise and speed up your renders: A proven method for Mantra
 
 These controls are on the Limits tab of the Mantra render node. I would leave these parameters to there default values except for diffuse limit and volume limit (if there actually volumes are in your scene). Raise diffuse limit to 4. You can also rais color limit to a number like 10 or more, but keep in mind that could increase render time.
 
-img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/BasicRayTracing_1.png" alt="Flowers in Chania" width="460" height="345">
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/BasicRayTracing_1.png" width="60%">.
 
 &nbsp;
 
@@ -313,6 +313,9 @@ If you have to use a sun-like source, I suggest faking it with an area lights. T
 
 The Fix: The best way to remove those white dots is to avoid using sun lights altogether.
 
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3103).jpg" width="100%">.
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3101).jpg" width="100%">.
+
 &nbsp;
 
 #### Reduce noise significantly
@@ -321,9 +324,14 @@ When using HDR/Envlight, you surround the entirety of your scene with a light th
 
 The Fix: Switch the "rendering node" dropdown option to "raytracing" or "direct lighting" in your envlight node. Note: Only one of them will have the desired results, so make two render tests.
 
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3106).jpg" width="50%">. 
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3108).jpg" width="50%">.
+
 &nbsp;
 
 #### Results
+
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3102).jpg" width="50%">.
 
 
 &nbsp;
@@ -342,6 +350,9 @@ to_flipbook=False, quality=2, ignore_inputs=False, method=RopByRop, ignore_bypas
 
 
 ## Speed-up Render time
+
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3101)_render-setup.png" width="80%">.
+
 
 
 #### Opt for Physically Based Rendering
