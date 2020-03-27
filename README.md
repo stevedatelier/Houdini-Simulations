@@ -116,7 +116,7 @@ Click the Wind on Particles button on the Particles shelf tab.
 
 #### Using vellum as skin
 
-Grouped some loops of points around the feet neck head torso etc. -Pin the Grouped points to the animation in the vellum configure cloth node. then run and cache a vellum sim.
+Grouped some loops of points around the desired areas of your model (geometry). -Pin the Grouped points to the animation in the vellum configure cloth node. then run and cache a vellum sim.
 
 &nbsp;
 
@@ -181,7 +181,7 @@ matrix m = optransform('/obj/moving_cube');
 
 ```
 
-But what about rotation? Looking at the rivet parameters, it supports rotation, but only via @N and @up. At this point I realised I knew how to go from @N and @up to a matrix or quaternion, but not the other way. After sleeping on it, realised its easier than I expected, and added this to my wrangle:
+But what about rotation? Looking at the rivet parameters, it supports rotation, but only via `@N` and `@up`. At this point I realised I knew how to go from `@N` and `@up` to a matrix or quaternion, but not the other way. After sleeping on it, realised its easier than I expected, and added this to my wrangle:
 
 ```
 matrix m = optransform('/obj/moving_cube');
@@ -252,5 +252,110 @@ Zero Centered Perlin      (string value "correctnoise")
 
 ```
 
+&nbsp;
 
+## Eliminate noise and speed up renders: Proven method for Mantra
+
+
+&nbsp;
+
+## Tutorial
+
+&nbsp;
+
+## Bind Arrays
+
+You can bind arrays by appending [], as in
+
+i[]@connected_pts = neighbours(0, @ptnum);
+For example, the following code loads the foo attribute as a vector and copies it to the P (position) attribute. You don’t need to specify the type of the P attribute because it’s one of the known attributes Houdini casts automatically.
+
+```
+@P = v@foo;
+
+```
+The following code sets the x component of the Cd attribute to the value of the whitewater attribute. You don’t need to specify the type of the Cd attribute because it’s one of the known attributes. You don’t need to specify the type of the whitewater attribute because it’s a float and unknown attributes are cast as float automatically.
+
+```
+@Cd.x = @whitewater;
+
+```
+
+&nbsp;
+
+#### Reading and modifying the voxel value
+
+    // Modify @foo, @bar, and @baz in the same way
+    // (when Bind each volume to density is on)
+    @density += sin(@P.x)
+    
+    
+&nbsp;
+
+#### Packed Primitives
+
+```
+surface showversion() 
+{
+    string    rname, rversion;
+    if (!renderstate("renderer:name", rname))
+        rname = "Unknown renderer";
+    if (!renderstate("renderer:version", rversion))
+        rversion = "Unknown version";
+    printf("Image rendered by %s (%s)\n", rname, rversion);
+}
+
+vector mapToScreen(vector NDC_P)
+{
+    // Given a point in NDC space, find out which pixel it
+    // maps to.
+    vector    result;
+    if (!renderstate("image:resolution", result))
+        result = {640, 486, 0};
+    return result * NDC_P;
+}
+
+```
+
+&nbsp;
+
+#### Blurring attributes with vex and point clouds
+
+You have Cd on a grid, you want to blur it. One way is to iterate through each point, look at its neighbours, add up the result, and divide by the number of neighbours. Because it's a grid, and the point numbering is consistent, you could do something like
+
+```
+int width = 50; // say the grid is 50 points wide
+vector left = point(0,'Cd', @ptnum-1);
+vector right = point(0,'Cd', @ptnum+1);
+vector top = point(0,'Cd', @ptnum+50);
+vector bottom = point(0,'Cd', @ptnum-50);
+@Cd = left + right + top + bottom;
+@Cd /= 4.0;
+
+```
+
+Works, but clunky, and it only works with a grid. Using the neighbour() and neighbourcount() functions is more generic (borrowed from odforce post):
+
+```
+int neighbours = neighbourcount(0, @ptnum);
+vector totalCd = 0;
+for (int i = 0; i < neighbours; i++)
+{
+    int neighPtnum = neighbour(0, @ptnum, i);    
+    totalCd += point(0, "Cd", neighPtnum);
+}
+@Cd = totalCd/neighbours;
+
+```
+
+Groovy, nice and generic now.
+
+However, there's an even shorter cleaner way, using point clouds:
+
+```
+
+int mypc = pcopen(0, 'P', @P, 1, 8);
+@Cd = pcfilter(mypc, 'Cd');
+
+```
 
