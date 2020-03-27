@@ -5,6 +5,8 @@ Find my Houdini notes and some of the setups I used to create volumes, oceans, f
 
 Every effort has been made to credit external sources.
 
+# Physical Simulations
+
 ## Vellum grains
 
 #### Vellum Constraints geometry node
@@ -139,16 +141,17 @@ vector  ocean_sample(string geometry, int phase, int frequency, int amplitude, f
 #### Foam clumping
 
 
-Variable Stiffness
-Note
+&nbsp;
 
-The solver will interpret constraints to have a variable stiffness if the pbfstiffness point attribute is present, even when Variable Stiffness is disabled.
+**Variable Stiffness
 
-Inclusion Chance
+The solver will interpret constraints to have a variable stiffness if the `pbfstiffness` point attribute is present, even when `Variable Stiffness` is disabled.
 
-Note
+&nbsp;
 
-All eligible whitewater particles are collected into the controldensity_candidate group; particles that are actually used for density control are put into the controldensity group.
+**Inclusion Chance
+
+All eligible `whitewater` particles are collected into the `controldensity_candidate` group; particles that are actually used for density control are put into the `controldensity` group.
 
 &nbsp;
 
@@ -274,12 +277,62 @@ Zero Centered Perlin      (string value "correctnoise")
 
 &nbsp;
 
-## Eliminate noise and speed up renders: Proven method for Mantra
+# Noise and render speed: Mantra
 
+Eliminate noise and speed up your renders: Proven method for Mantra
 
 &nbsp;
 
-## Tutorial
+## Reduce and eliminate noise
+
+&nbsp;
+Mantra limit parameters
+Understanding the difference between direct and indirect lighting. 
+Eliminate firefly noise: Avoid using sunlights
+(Reduce noise significantly)
+Results
+
+
+
+## Speed-up Render time
+
+&nbsp;
+
+#### hou.RopNode class
+&nbsp;
+
+#### Physically based rendering
+&nbsp;
+
+#### Dicing:shading quality
+&nbsp;
+
+#### Pixel samples
+&nbsp;
+
+#### Max Ray samples
+&nbsp;
+
+#### Noise level
+&nbsp;
+
+#### Light quality. All= 1
+&nbsp;
+
+#### Scholastic samples
+&nbsp;
+
+#### Refract limit
+&nbsp;
+
+#### PBR shading
+&nbsp;
+
+#### Shading quality multiplier
+
+&nbsp;
+
+# Tutorial
 
 &nbsp;
 
