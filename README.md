@@ -18,13 +18,14 @@ After the grain_constraints node you need the vellum_constrains node with target
 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize_Muddy.gif" width="60%">.
 
-<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize-2.gif" width="60%">.
 
 &nbsp;
 
 #### Glue
 
 Each point will search for a nearby point that is not a member of its own piece. It will construct a distance constraint holding it to that point. This is useful for building systems that automatically glue together by proximity, especially when combined with breaking.
+
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize-2.gif" width="60%">.
 
 POPGrains/get_neighbours:
 ```
@@ -36,6 +37,8 @@ POPGrains/get_neighbours:
     append(neighbors, ptj);
     
  ```
+
+
  &nbsp;
     
 ## Waves
@@ -57,6 +60,9 @@ Change the fluid level
 In the network editor, go up to the Scene level, then double-click the fliptank_initial object to go inside.
 Modify the Water Level parameter to adjust the fluid level in the tank.
 
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/8-wave-characteristics.gif" width="60%">.
+
+Source: Unversity of Brtish Columbia
 
 `Crest` = Highest point of the wave
 
@@ -74,6 +80,7 @@ Modify the Water Level parameter to adjust the fluid level in the tank.
 
 These characteristics are important in determining the size of waves, the speed at which they travel, how they break on shore, and much more. We will refer back to them throughout the following unit.
 
+
 &nbsp;
 
 #### 5-wave-velocities
@@ -82,6 +89,10 @@ The speed at which this one group of waves travels across the water is known as 
 
 In the simulation below, four groups of waves are shown with the red dot representing the phase velocity and the green dot representing the group velocity.
 
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/5-wave-velocities.gif" width="60%">.
+
+Source: Kraaiennest - Own work, GFDL, https://commons.wikimedia.org/w/index.php?curid=3651297
+
 &nbsp;
 
 #### Wave type / Wind-generated waves
@@ -89,11 +100,16 @@ In the simulation below, four groups of waves are shown with the red dot represe
 
 Wind-waves are a result of wind disturbing the ocean surface and displacing water. Natural forces, such as the water’s surface tension (capillarity), or gravity, work to restore the disturbed water to its calm state, flattening the water’s surface. Different types of waves are named for their restoring force. Small winds displace small amounts of water on the surface, creating very short-wavelength capillary waves. Here, capillarity acts as the restoring force. Capillary waves are typically only a few cm in length. Larger winds create gravity waves, for which gravity acts as the restoring force. These waves can be metres to kilometers long.
 
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/8-wind-wave-types.jpg" width="60%">.
+
+
 &nbsp;
 
 #### Wave type / Wind-generated waves Rogue Waves (and Interference)**
 
 These are very large waves that form due to wave interference. What is interference? When two waves run through each other, they can add up or cancel out. This property of waves is known as interference. If the crest of one wave passes through the trough of another, they cancel out, which is called destructive interference. The resulting wave is smaller and carries less energy. Whereas if the crest of one wave passes through with the crest of another wave, they add up, which is called constructive interference. The resulting wave is bigger, carries higher energy, but are temporary (short lived).   Rogue waves are the result of constructive interference that causes the wave height to be unusually higher than the other waves around it, and can catch boaters (and people on the shore) by surprise.  
+
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/8-rogue.jpg" width="60%">.
 
 &nbsp;
 
