@@ -634,3 +634,13 @@ int mypc = pcopen(0, 'P', @P, 1, 8);
 
 ```
 
+## Resources
+
+In this tutorial I am focusing on fluid & pyro simulations using the physcal poperties in Houdini.
+For more on Vex syntax check SideFX wiki page http://www.tokeru.com/cgwiki/?title=HoudiniVex
+You'll find additonal examples on Odforce.net.
+
+Remember that the more precise you are, the more beautiful your simulations will be. The possibilities are limitless. To be successful, focus on reduction. This means that you want to find solutions that will save you time. Let yourself be inspired by the wonderful world of physics. There are several courses and readings on the Internet to help you understand the importance of the laws of nature and the laws of gravity - I know what you think *. "Physicists have discovered that gravity is not a force, so what should I worry about it?"* Well to that I answer, until someone solves the problem of quantum gravity, you're stuck with Einstein's general relativity, so *just work with it!
+
+
+
