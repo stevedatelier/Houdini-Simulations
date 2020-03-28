@@ -2,7 +2,8 @@
 
 ## Find my notes and some of the code snippets, setups I used to create volumes, oceans, fluid and more inside SideFX Houdini
 
-###### by Steve d'Atelier
+<p align="right"><small><sup>by Steve d'Atelier</sup></small></p>
+
 
 ### How to use
 
@@ -634,7 +635,12 @@ int mypc = pcopen(0, 'P', @P, 1, 8);
 
 ```
 
-## Resources
+### To do
+Any suggestions? questions? Please ask.
+
+&nbsp;
+
+### Resources
 
 In this tutorial I am focusing on fluid & pyro simulations using the physcal poperties in Houdini.
 For more on Vex syntax check SideFX wiki page http://www.tokeru.com/cgwiki/?title=HoudiniVex
