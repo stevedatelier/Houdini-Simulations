@@ -16,6 +16,10 @@ You can clone, or directly download this repository. It contains examples [...].
 
 After the grain_constraints node you need the vellum_constrains node with target_group_type set to points and constraint_type set to glue.
 
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize_Muddy.gif" width="60%">.
+
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize-2.gif" width="60%">.
+
 &nbsp;
 
 #### Glue
