@@ -31,7 +31,7 @@ You can clone, or directly download this repository. It contains examples [...].
 * [<small><sup>Pyro / Dynamic clouds and volumes</sup></small>](#Dynamic-clouds-and-volumes)
 * [<small><sup>Mantra / limit parameters</sup></small>](#Mantra-limit-parameters)
 * [<small><sup>Mantra / Understanding the difference between direct and indirect lighting</sup></small>](#Understanding-the-difference-between-direct-and-indirect-lighting)
-* [<small><sup>Mantra / Eliminate firefly noise: Avoid using sunlights</sup></small>](#Eliminate-firefly-noise--Avoid-using-sunlights)
+* [<small><sup>Mantra / Eliminate firefly noise: Avoid using sunlights</sup></small>](#Eliminate-firefly-noise)
 * [<small><sup>Mantra / Reduce noise significantly</sup></small>](#Reduce-noise-significantly)
 * [<small><sup>Mantra / Results</sup></small>](#Results)
 * [<small><sup>Python scripting hou</sup></small>](#Python-scripting-hou )
@@ -403,8 +403,10 @@ Direct lighting gives you a darker image with more pronounced shadows.
 
 &nbsp;
 
-#### Eliminate firefly noise: Avoid using sunlights
+#### Eliminate firefly noise
 
+**Avoid using sunlights**
+ 
 If you have to use a sun-like source, I suggest faking it with an area lights. The Houdini sunlight creates big white dots on your render which I refer to as fireflies. 
 
 The Fix: The best way to remove those white dots is to avoid using sun lights altogether.
@@ -432,7 +434,7 @@ The Fix: Switch the "rendering node" dropdown option to "raytracing" or "direct 
 
 &nbsp;
 
-#### Python scripting  hou 
+#### Python scripting hou 
 
 hou.RopNode class 
 
