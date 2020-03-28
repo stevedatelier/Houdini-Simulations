@@ -36,7 +36,7 @@ You can clone, or directly download this repository. It contains examples [...].
 * [<small><sup>Mantra / Results</sup></small>](#Results)
 * [<small><sup>Python scripting hou</sup></small>](#Python-scripting-hou )
 * [<small><sup>Speed-up Render time / Opt for Physically Based Rendering</sup></small>](#Opt-for-Physically-Based-Rendering)
-* [<small><sup>Speed-up Render time / Dicing: shading quality</sup></small>](#Dicing--shading-quality)
+* [<small><sup>Speed-up Render time / Dicing: shading quality</sup></small>](#Dicing)
 * [<small><sup>Speed-up Render time / Pixel samples</sup></small>](#Pixel-samples)
 * [<small><sup>Speed-up Render time / Max Ray samples</sup></small>](#Max-Ray-samples)
 * [<small><sup>Speed-up Render time / Noise level</sup></small>](#Noise-level)
