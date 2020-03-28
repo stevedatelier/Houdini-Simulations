@@ -62,7 +62,7 @@ Modify the Water Level parameter to adjust the fluid level in the tank.
 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/8-wave-characteristics.gif" width="60%">.
 
-Source: Unversity of Brtish Columbia
+###### Source: [Unversity of Brtish Columbia](https://www.eoas.ubc.ca/courses/atsc113/sailing/met_concepts/08-met-waves/8b-wave-characteristics/index.html)
 
 `Crest` = Highest point of the wave
 
@@ -89,7 +89,7 @@ These characteristics are important in determining the size of waves, the speed 
 ##### After
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/water_lvl.jpg" width="60%">.
 
-*These number values are **"just for the purpose of this experiment."** Your measurements will certainly need to be different. Without tests, I can't predict what your simulation will do.
+*These numeric values are **"just for the purpose of this experiment."** Your measurements will certainly need to be different. Without tests, I can't predict what your simulation will do.
 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize%20(2).gif" width="60%">.
 
@@ -104,7 +104,7 @@ In the simulation below, four groups of waves are shown with the red dot represe
 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/5-wave-velocities.gif" width="60%">.
 
-Source: Kraaiennest - Own work, GFDL, https://commons.wikimedia.org/w/index.php?curid=3651297
+###### Source: Kraaiennest - Own work, GFDL, https://commons.wikimedia.org/w/index.php?curid=3651297
 
 &nbsp;
 
@@ -276,9 +276,10 @@ matrix3 m_rot = matrix3(m);
 
 #### Control Pyro based on vex rules
 
-you can use the fit function for that:
-
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize%20(4).gif" width="60%">.
+
+
+you can use the fit function for that:
 
 
 ```
@@ -377,14 +378,14 @@ When using HDR/Envlight, you surround the entirety of your scene with a light th
 
 The Fix: Switch the "rendering node" dropdown option to "raytracing" or "direct lighting" in your envlight node. Note: Only one of them will have the desired results, so make two render tests.
 
-<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3106).jpg" width="50%">. 
-<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3108).jpg" width="50%">.
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3106).jpg" width="60%">. 
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3108).jpg" width="60%">.
 
 &nbsp;
 
 #### Results
 
-<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3102).jpg" width="50%">.
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3102).jpg" width="60%">.
 
 
 &nbsp;
@@ -482,7 +483,7 @@ Dicing > Shading Quality: Dial your number to as low as 0.25
 
 Keep in mind the higher these two numbers, the slower your render time will be. Pixel samples serve as a global multiplier for the adjustments you make below. It isn't necessary to play with these since we are already working with the controls below.
 
-<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3101)_render-setup.jpg" width="60%">.
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3101)_render-setup.jpg" width="50%">.
 
 &nbsp;
 
@@ -510,7 +511,7 @@ I always select 0.07-0.05 for volumes, 0.05 for heavy scenes of all kind, and 0.
 
 Turn it on.
 
-<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/VolumeSamplingStochastic.jpg" width="60%">.
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/VolumeSamplingStochastic.jpg" width="50%">.
 
 &nbsp;
 
@@ -518,7 +519,7 @@ Turn it on.
 
 2 or 4 will work.
 
-<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/RefractLimit.jpg" width="60%">.
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/RefractLimit.jpg" width="50%">.
 
 &nbsp;
 
