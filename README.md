@@ -17,7 +17,7 @@ You can clone, or directly download this repository. It contains examples [...].
 * [<small><sup>Waves / Tank depth and level</sup></small>](#Tank-depth-and-level)
 * [<small><sup>Waves / 5-wave-velocities</sup></small>](#5-wave-velocities)
 * [<small><sup>Wave type / Wind-generated waves</sup></small>](#Wave-type--Wind-generated-waves)
-* [<small><sup>Wave type / Wind-generated waves Rogue Waves</sup></small>](#Wave-type--Wind-generated-waves Rogue-Waves)
+* [<small><sup>Wave type / Wind-generated waves Rogue Waves</sup></small>](#Wave-type--Wind-generated-waves-Rogue-Waves)
 * [<small><sup>Vellum and Forces / Wind force</sup></small>](#Wind-force)
 * [<small><sup>Vellum and Forces / POP Wind</sup></small>](#POP-wind)
 * [<small><sup>Ocean / ocean_sample VEX function</sup></small>](#ocean_sample-VEX-function)
@@ -26,7 +26,7 @@ You can clone, or directly download this repository. It contains examples [...].
 * [<small><sup>Using vellum as skin</sup></small>](#Using-vellum-as-skin)
 * [<small><sup>Enforce Prototypes</sup></small>](#Enforce-Prototypes)* 
 * [<small><sup>Get transform of objects with optransform</sup></small>](#Get-transform-of-objects-with-optransform)
-* [<small><sup>optransform to do a motion control style camera</sup></small>](#optransform-to-do-a-motion-control-style camera)
+* [<small><sup>optransform to do a motion control style camera</sup></small>](#optransform-to-do-a-motion-control-style-camera)
 * [<small><sup>Pyro / Control Pyro based on vex rules</sup></small>](#Control-Pyro-based-on-vex-rules)
 * [<small><sup>Pyro / Dynamic clouds and volumes</sup></small>](#Dynamic-clouds-and-volumes)
 * [<small><sup>Mantra / limit parameters</sup></small>](#Mantra-limit-parameters)
@@ -45,9 +45,9 @@ You can clone, or directly download this repository. It contains examples [...].
 * [<small><sup>Speed-up Render time / Refract limit</sup></small>](#Refract-limit)
 * [<small><sup>Speed-up Render time / PBR shading</sup></small>](#PBR-shading)
 * [<small><sup>Speed-up Render time / Shading quality multiplier</sup></small>](#Shading-quality-multiplier)
-* [<small><sup>Reading and modifying the voxel value</sup></small>](#Reading-and-modifying-the voxel-value)
+* [<small><sup>Reading and modifying the voxel value</sup></small>](#Reading-and-modifying-the-voxel-value)
 * [<small><sup>Packed Primitives</sup></small>](#Packed-Primitives)
-* [<small><sup>Blurring attributes with vex and point clouds</sup></small>](#Blurring attributes-with-vex-and-point-clouds)
+* [<small><sup>Blurring attributes with vex and point clouds</sup></small>](#Blurring-attributes-with-vex-and-point-clouds)
 
 
 
