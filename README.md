@@ -11,7 +11,7 @@ You can clone, or directly download this repository. It contains examples [...].
 
 ### Topics
 
-* [Vellum Constraints](#Vellum-Constraints)
+* [<p><small><sup>Vellum Constraints</sup></small></p>](#Vellum-Constraints)
 * [Vellum grains Glue](#Glue)
 * [Wave characteristics](#Wave characteristics)
 * [Tank depth and level](#Tank depth and level)
@@ -48,6 +48,7 @@ You can clone, or directly download this repository. It contains examples [...].
 * [Reading and modifying the voxel value](#Reading and modifying the voxel value)
 * [Packed Primitives](#Packed Primitives)
 * [Blurring attributes with vex and point clouds](#Blurring attributes with vex and point clouds
+
 
 
 
