@@ -122,7 +122,10 @@ Wind-waves are a result of wind disturbing the ocean surface and displacing wate
 
 These are very large waves that form due to wave interference. What is interference? When two waves run through each other, they can add up or cancel out. This property of waves is known as interference. If the crest of one wave passes through the trough of another, they cancel out, which is called destructive interference. The resulting wave is smaller and carries less energy. Whereas if the crest of one wave passes through with the crest of another wave, they add up, which is called constructive interference. The resulting wave is bigger, carries higher energy, but are temporary (short lived).   Rogue waves are the result of constructive interference that causes the wave height to be unusually higher than the other waves around it, and can catch boaters (and people on the shore) by surprise.  
 
-<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/8-rogue.jpg" width="60%">.
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/8-rogue.jpg" width="40%">.
+
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize.gif" width="60%">.
+
 
 &nbsp;
 
@@ -150,19 +153,17 @@ Using Wind on Particles
 
 Click the Wind on Particles button on the Particles shelf tab.
 
-&nbsp;
-
-#### Using vellum as skin
-
-Grouped some loops of points around the desired areas of your model (geometry). -Pin the Grouped points to the animation in the vellum configure cloth node. then run and cache a vellum sim.
 
 &nbsp;
+
 
 ## Ocean
 
 &nbsp;
 
 #### ocean_sample VEX function
+
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize%20(3).gif" width="60%">.
 
 ```
 vector  ocean_sample(string geometry, int phase, int frequency, int amplitude, float hscale, float time, int mode, int         downsample, vector pos
@@ -178,6 +179,9 @@ vector  ocean_sample(string geometry, int phase, int frequency, int amplitude, f
 
 
 &nbsp;
+
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize%20(7).gif" width="60%">.
+
 
 **Variable Stiffness
 
@@ -210,6 +214,16 @@ The following code sets the `x` component of the `Cd` attribute to the value of 
 ```
 
 &nbsp;
+
+#### Using vellum as skin
+
+Grouped some loops of points around the desired areas of your model (geometry). -Pin the Grouped points to the animation in the vellum configure cloth node. then run and cache a vellum sim.
+
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize%20(6).gif" width="60%">.
+
+
+&nbsp;
+
 
 #### Enforce Prototypes	
 
@@ -264,6 +278,9 @@ matrix3 m_rot = matrix3(m);
 
 you can use the fit function for that:
 
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize%20(4).gif" width="60%">.
+
+
 ```
 float drag = fit(@P.y,0,10,0,0.1); // zero drag at y=0, drag or 0.1 at y=10
 v@vel *= 1-drag;
@@ -283,6 +300,9 @@ v@vel = normalize(v@vel)* min(length(v@vel),maxspeed);
 ## Dynamic clouds and volumes
 
 Using the Noise Field dynamics node can yield some petty realistic results when working with volumes.
+
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize%20(1).gif" width="60%">.
+
 
 LOCALS
 
@@ -462,7 +482,7 @@ Dicing > Shading Quality: Dial your number to as low as 0.25
 
 Keep in mind the higher these two numbers, the slower your render time will be. Pixel samples serve as a global multiplier for the adjustments you make below. It isn't necessary to play with these since we are already working with the controls below.
 
-<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3101)_render-setup.jpg" width="50%">.
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3101)_render-setup.jpg" width="60%">.
 
 &nbsp;
 
@@ -490,7 +510,7 @@ I always select 0.07-0.05 for volumes, 0.05 for heavy scenes of all kind, and 0.
 
 Turn it on.
 
-<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/VolumeSamplingStochastic.jpg" width="50%">.
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/VolumeSamplingStochastic.jpg" width="60%">.
 
 &nbsp;
 
@@ -498,7 +518,7 @@ Turn it on.
 
 2 or 4 will work.
 
-<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/RefractLimit.jpg" width="50%">.
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/RefractLimit.jpg" width="60%">.
 
 &nbsp;
 
