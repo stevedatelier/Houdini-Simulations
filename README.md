@@ -11,9 +11,11 @@ You can clone, or directly download this repository. It contains examples [...].
 
 ### Topics
 
+* [Vellum Constraints](#Vellum-Constraints)
+
 ## Vellum grains
 
-#### Vellum Constraints geometry node
+#### Vellum Constraints
 
 After the grain_constraints node you need the vellum_constrains node with target_group_type set to points and constraint_type set to glue.
 
