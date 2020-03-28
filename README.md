@@ -24,7 +24,7 @@ You can clone, or directly download this repository. It contains examples [...].
 * [<small><sup>Ocean / Foam clumping</sup></small>](#Foam-clumping)
 * [<small><sup>Whitewater / Bind Arrays</sup></small>](#Whitewater--Bind-Arrays)
 * [<small><sup>Using vellum as skin</sup></small>](#Using-vellum-as-skin)
-* [<small><sup>Enforce Prototypes</sup></small>](#Enforce-Prototypes)* 
+* [<small><sup>Enforce Prototypes</sup></small>](#Enforce-Prototypes) 
 * [<small><sup>Get transform of objects with optransform</sup></small>](#Get-transform-of-objects-with-optransform)
 * [<small><sup>optransform to do a motion control style camera</sup></small>](#optransform-to-do-a-motion-control-style-camera)
 * [<small><sup>Pyro / Control Pyro based on vex rules</sup></small>](#Control-Pyro-based-on-vex-rules)
@@ -432,9 +432,9 @@ The Fix: Switch the "rendering node" dropdown option to "raytracing" or "direct 
 
 &nbsp;
 
-#### hou.RopNode class
+#### Python Scripting  hou 
 
-Python Scripting  hou 
+hou.RopNode class 
 
 ```
 render(frame_range=(), res=(), output_file=None, output_format=None, 
