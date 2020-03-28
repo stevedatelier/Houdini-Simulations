@@ -12,7 +12,7 @@ You can clone, or directly download this repository. It contains examples [...].
 ### Topics
 
 * [<p><small><sup>Vellum Constraints</sup></small></p>](#Vellum-Constraints)
-* [Vellum grains Glue](#Glue)
+* [<p><small><sup>Vellum grains Glue</sup></small></p>](#Glue)
 * [Wave characteristics](#Wave characteristics)
 * [Tank depth and level](#Tank depth and level)
 * [5-wave-velocities](#5-wave-velocities)
