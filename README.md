@@ -13,41 +13,41 @@ You can clone, or directly download this repository. It contains examples [...].
 
 * [<small><sup>Vellum grains / Constraints</sup></small>](#Vellum-Constraints)
 * [<small><sup>Vellum grains / Glue</sup></small>](#Glue)
-* [<small><sup>Waves / Characteristics</sup></small>](#Wave characteristics)
-* [<small><sup>Waves / Tank depth and level</sup></small>](#Tank depth and level)
+* [<small><sup>Waves / Characteristics</sup></small>](#Wave-characteristics)
+* [<small><sup>Waves / Tank depth and level</sup></small>](#Tank-depth-and-level)
 * [<small><sup>Waves / 5-wave-velocities</sup></small>](#5-wave-velocities)
-* [<small><sup>Wave type / Wind-generated waves</sup></small>](#Wave-type-/-Wind-generated-waves)
-* [<small><sup>Wave type / Wind-generated waves Rogue Waves (and Interference)</sup></small>](#Wave type / Wind-generated waves Rogue Waves (and Interference))
+* [<small><sup>Wave type / Wind-generated waves</sup></small>](#Wave-type--Wind-generated-waves)
+* [<small><sup>Wave type / Wind-generated waves Rogue Waves</sup></small>](#Wave-type--Wind-generated-waves Rogue-Waves)
 * [<small><sup>Vellum and Forces / Wind force</sup></small>](#Wind-force)
 * [<small><sup>Vellum and Forces / POP Wind</sup></small>](#POP-wind)
-* [<small><sup>Ocean / ocean_sample VEX function</sup></small>](#ocean_sample VEX function)
-* [<small><sup>Ocean / Foam clumping</sup></small>](#Foam clumping)
-* [<small><sup>Whitewater / Bind Arrays</sup></small>](#Whitewater / Bind Arrays)
-* [<small><sup>Using vellum as skin</sup></small>](#Using vellum as skin)
-* [<small><sup>Enforce Prototypes</sup></small>](#Enforce Prototypes)* 
-* [<small><sup>Get transform of objects with optransform</sup></small>](#Get transform of objects with optransform)
-* [<small><sup>optransform to do a motion control style camera</sup></small>](#optransform to do a motion control style camera)
-* [<small><sup>Pyro / Control Pyro based on vex rules</sup></small>](#Control Pyro based on vex rules)
-* [<small><sup>Pyro / Dynamic clouds and volumes</sup></small>](#Dynamic clouds and volumes)
-* [<small><sup>Mantra / limit parameters</sup></small>](#Mantra limit parameters)
-* [<small><sup>Mantra / Understanding the difference between direct and indirect lighting</sup></small>](#nderstanding the difference between direct and indirect lighting)
-* [<small><sup>Mantra / Eliminate firefly noise: Avoid using sunlights</sup></small>](#Eliminate firefly noise: Avoid using sunlights)
-* [<small><sup>Mantra / Reduce noise significantly</sup></small>](#Reduce noise significantly)
+* [<small><sup>Ocean / ocean_sample VEX function</sup></small>](#ocean_sample-VEX-function)
+* [<small><sup>Ocean / Foam clumping</sup></small>](#Foam-clumping)
+* [<small><sup>Whitewater / Bind Arrays</sup></small>](#Whitewater--Bind-Arrays)
+* [<small><sup>Using vellum as skin</sup></small>](#Using-vellum-as-skin)
+* [<small><sup>Enforce Prototypes</sup></small>](#Enforce-Prototypes)* 
+* [<small><sup>Get transform of objects with optransform</sup></small>](#Get-transform-of-objects-with-optransform)
+* [<small><sup>optransform to do a motion control style camera</sup></small>](#optransform-to-do-a-motion-control-style camera)
+* [<small><sup>Pyro / Control Pyro based on vex rules</sup></small>](#Control-Pyro-based-on-vex-rules)
+* [<small><sup>Pyro / Dynamic clouds and volumes</sup></small>](#Dynamic-clouds-and-volumes)
+* [<small><sup>Mantra / limit parameters</sup></small>](#Mantra-limit-parameters)
+* [<small><sup>Mantra / Understanding the difference between direct and indirect lighting</sup></small>](#Understanding-the-difference-between-direct-and-indirect-lighting)
+* [<small><sup>Mantra / Eliminate firefly noise: Avoid using sunlights</sup></small>](#Eliminate-firefly-noise--Avoid-using-sunlights)
+* [<small><sup>Mantra / Reduce noise significantly</sup></small>](#Reduce-noise-significantly)
 * [<small><sup>Mantra / Results</sup></small>](#Results)
-* [<small><sup>Python Scripting hou</sup></small>](#VPython Scripting hou )
-* [<small><sup>Speed-up Render time / Opt for Physically Based Rendering</sup></small>](#Opt for Physically Based Rendering)
-* [<small><sup>Speed-up Render time / Dicing:shading quality</sup></small>](#Dicing:shading quality)
-* [<small><sup>Speed-up Render time / Pixel samples</sup></small>](#Pixel samples)
-* [<small><sup>Speed-up Render time / Max Ray samples</sup></small>](#Max Ray samples)
-* [<small><sup>Speed-up Render time / Noise level</sup></small>](#Noise level)
-* [<small><sup>Speed-up Render time / Light quality</sup></small>](#Light quality. All= 1)
-* [<small><sup>Speed-up Render time / Scholastic samples</sup></small>](#Scholastic samples)
-* [<small><sup>Speed-up Render time / Refract limit</sup></small>](#Refract limit)
-* [<small><sup>Speed-up Render time / PBR shading</sup></small>](#PBR shading)
-* [<small><sup>Speed-up Render time / Shading quality multiplier</sup></small>](#Shading quality multiplier)
-* [<small><sup>Reading and modifying the voxel value</sup></small>](#Reading and modifying the voxel value)
-* [<small><sup>Packed Primitives</sup></small>](#Packed Primitives)
-* [<small><sup>Blurring attributes with vex and point clouds</sup></small>](#Blurring attributes with vex and point clouds)
+* [<small><sup>Python Scripting hou</sup></small>](#VPython-Scripting-hou )
+* [<small><sup>Speed-up Render time / Opt for Physically Based Rendering</sup></small>](#Opt-for-Physically-Based-Rendering)
+* [<small><sup>Speed-up Render time / Dicing:shading quality</sup></small>](#Dicing--shading-quality)
+* [<small><sup>Speed-up Render time / Pixel samples</sup></small>](#Pixel-samples)
+* [<small><sup>Speed-up Render time / Max Ray samples</sup></small>](#Max-Ray-samples)
+* [<small><sup>Speed-up Render time / Noise level</sup></small>](#Noise-level)
+* [<small><sup>Speed-up Render time / Light quality</sup></small>](#Light-quality)
+* [<small><sup>Speed-up Render time / Scholastic samples</sup></small>](#Scholastic-samples)
+* [<small><sup>Speed-up Render time / Refract limit</sup></small>](#Refract-limit)
+* [<small><sup>Speed-up Render time / PBR shading</sup></small>](#PBR-shading)
+* [<small><sup>Speed-up Render time / Shading quality multiplier</sup></small>](#Shading-quality-multiplier)
+* [<small><sup>Reading and modifying the voxel value</sup></small>](#Reading-and-modifying-the voxel-value)
+* [<small><sup>Packed Primitives</sup></small>](#Packed-Primitives)
+* [<small><sup>Blurring attributes with vex and point clouds</sup></small>](#Blurring attributes-with-vex-and-point-clouds)
 
 
 
@@ -160,7 +160,7 @@ Wind-waves are a result of wind disturbing the ocean surface and displacing wate
 
 &nbsp;
 
-#### Wave type / Wind-generated waves Rogue Waves (and Interference)**
+#### Wave type / Wind-generated waves Rogue Waves
 
 These are very large waves that form due to wave interference. What is interference? When two waves run through each other, they can add up or cancel out. This property of waves is known as interference. If the crest of one wave passes through the trough of another, they cancel out, which is called destructive interference. The resulting wave is smaller and carries less energy. Whereas if the crest of one wave passes through with the crest of another wave, they add up, which is called constructive interference. The resulting wave is bigger, carries higher energy, but are temporary (short lived).   Rogue waves are the result of constructive interference that causes the wave height to be unusually higher than the other waves around it, and can catch boaters (and people on the shore) by surprise.  
 
@@ -543,9 +543,9 @@ I always select 0.07-0.05 for volumes, 0.05 for heavy scenes of all kind, and 0.
 
 &nbsp;
 
-#### Light quality. All= 1
+#### Light quality. 
 
-1 is good enough.
+All= 1. The default setting is good enough.
 
 &nbsp;
 
