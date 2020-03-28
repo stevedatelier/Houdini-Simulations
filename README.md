@@ -11,8 +11,8 @@ You can clone, or directly download this repository. It contains examples [...].
 
 ### Topics
 
-* [<small><sup>Vellum Constraints</sup></small>](#Vellum-Constraints)
-* [<small><sup>Vellum grains Glue</sup></small>](#Glue)
+[<small><sup>Vellum Constraints</sup></small>](#Vellum-Constraints)
+[<small><sup>Vellum grains Glue</sup></small>](#Glue)
 * [<small><sup>Wave characteristics</sup></small>](#Wave characteristics)
 * [<small><sup>Tank depth and level</sup></small>](#Tank depth and level)
 * [<small><sup>5-wave-velocities</sup></small>](#5-wave-velocities)
