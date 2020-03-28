@@ -89,7 +89,7 @@ These characteristics are important in determining the size of waves, the speed 
 ##### After
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/water_lvl.jpg" width="60%">.
 
-*These numeric values are **"just for the purpose of this experiment."** Your measurements will certainly need to be different. Without tests, I can't predict what your simulation will do.
+*These numeric values are **"just for the purpose of this demonstration."** Your measurements will certainly need to be different. Without tests, I can't predict what your simulation will do.
 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize%20(2).gif" width="60%">.
 
