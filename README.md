@@ -56,7 +56,7 @@ You can clone, or directly download this repository. It contains examples [...].
 
 #### Vellum Constraints
 
-After the grain_constraints node you need the vellum_constrains node with target_group_type set to points and constraint_type set to glue.
+After the `grain_constraints` node you need the vellum_constrains node with `target_group_typ`e set to points and `constraint_type` set to glue.
 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize_Muddy.gif" width="60%">.
 
@@ -94,12 +94,12 @@ POPGrains/get_neighbours:
 Look for Particle Fluid Tank: Increasing the Water level to 3 or 4 will create interesting waves. 
 
 Resize the tank
-In the network editor, go up to the Scene level, then double-click the fliptank_initial object to go inside.
+In the network editor, go up to the Scene level, then double-click the `fliptank_initial` object to go inside.
 Click the wavetank node.
 Use the handles in the viewport or the parameters in the parameter editor to change the size of the box.
 
 Change the fluid level
-In the network editor, go up to the Scene level, then double-click the fliptank_initial object to go inside.
+In the network editor, go up to the Scene level, then double-click the `fliptank_initial` object to go inside.
 Modify the Water Level parameter to adjust the fluid level in the tank.
 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/8-wave-characteristics.gif" width="60%">.
