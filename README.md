@@ -515,9 +515,9 @@ plastic(
 
 &nbsp;
 
-#### Dicing:shading quality
+#### Dicing
 
-This is the most important part, the part you need to remember. The absolute best way to significantly reduce render times is by adjusting shading quality. The lower the number, the faster your render. There were no noticeable differences in my 2K rendrers after I lowered shading quality. 
+This is the most important part, the part you need to remember. The absolute best way to significantly reduce render times is by adjusting **shading quality**. The lower the number, the faster your render. There were no noticeable differences in my 2K rendrers after I lowered shading quality. 
 
 Dicing > Shading Quality: Dial your number to as low as 0.25
 
@@ -545,7 +545,7 @@ I always select 0.07-0.05 for volumes, 0.05 for heavy scenes of all kind, and 0.
 
 &nbsp;
 
-#### Light quality. 
+#### Light quality
 
 All= 1. The default setting is good enough.
 
@@ -597,7 +597,7 @@ shadingquality = object:shadingquality * renderer:shadingfactor
 
 &nbsp;
 
-# Tutorial
+# Notes
 
 &nbsp;
 
