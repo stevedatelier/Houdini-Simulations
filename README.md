@@ -685,7 +685,7 @@ Any suggestions? questions? Please ask.
 
 ### Resources
 
-In this tutorial I am focusing on fluid & pyro simulations using the physcal poperties in Houdini.
+In this tutorial, I am focusing on fluid & pyro simulations using the physcal poperties in Houdini.
 For more on Vex syntax check SideFX wiki page http://www.tokeru.com/cgwiki/?title=HoudiniVex
 You'll find additonal examples on Odforce.net.
 
