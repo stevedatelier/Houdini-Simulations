@@ -61,7 +61,7 @@ After the `grain_constraints` node you need the vellum_constrains node with `tar
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize_Muddy.gif" width="60%">.
 
 
-&nbsp;
+<br/>
 
 #### Glue
 
@@ -81,13 +81,13 @@ POPGrains/get_neighbours:
  ```
 
 
- &nbsp;
+<br/>
     
 ## Waves
 
 #### Wave characteristics
 
-&nbsp;
+<br/>
 
 #### Tank depth and level
 
@@ -136,7 +136,7 @@ These characteristics are important in determining the size of waves, the speed 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize%20(2).gif" width="60%">.
 
 
-&nbsp;
+<br/>
 
 #### 5-wave-velocities
 
@@ -148,7 +148,7 @@ In the simulation below, four groups of waves are shown with the red dot represe
 
 ###### Source: Kraaiennest - Own work, GFDL, https://commons.wikimedia.org/w/index.php?curid=3651297
 
-&nbsp;
+<br/>
 
 #### Wave type / Wind-generated waves
 
@@ -158,7 +158,7 @@ Wind-waves are a result of wind disturbing the ocean surface and displacing wate
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/8-wind-wave-types.jpg" width="60%">.
 
 
-&nbsp;
+<br/>
 
 #### Wave type / Wind-generated waves Rogue Waves
 
@@ -169,11 +169,11 @@ These are very large waves that form due to wave interference. What is interfere
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize.gif" width="60%">.
 
 
-&nbsp;
+<br/>
 
 ## Vellum and Forces
 
-&nbsp;
+<br/>
 
 #### Wind force
 
@@ -181,7 +181,7 @@ Wind is an velocity sensitive force. If an object is already traveling at the wi
 
 Note: If the wind does not apply velocity, increase the Scale Force value on the Wind tab of the Wind Force node in the parameter editor.
 
-&nbsp;
+<br/>
 
 #### POP Wind
 
@@ -196,12 +196,12 @@ Using Wind on Particles
 Click the Wind on Particles button on the Particles shelf tab.
 
 
-&nbsp;
+<br/>
 
 
 ## Ocean
 
-&nbsp;
+<br/>
 
 #### ocean_sample VEX function
 
@@ -215,12 +215,12 @@ vector  ocean_sample(string geometry, int phase, int frequency, int amplitude, f
 @P += ocean_sample("spectrum.bgeo", 0, 1, 2, 0.7, @Time, 0, 0, @P);
     
 ```
-&nbsp;
+<br/>
 
 #### Foam clumping
 
 
-&nbsp;
+<br/>
 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize%20(7).gif" width="60%">.
 
@@ -229,13 +229,13 @@ vector  ocean_sample(string geometry, int phase, int frequency, int amplitude, f
 
 The solver will interpret constraints to have a variable stiffness if the `pbfstiffness` point attribute is present, even when `Variable Stiffness` is disabled.
 
-&nbsp;
+<br/>
 
 **Inclusion Chance
 
 All eligible `whitewater` particles are collected into the `controldensity_candidate` group; particles that are actually used for density control are put into the `controldensity` group.
 
-&nbsp;
+<br/>
 
 ## Whitewater / Bind Arrays
 
@@ -254,8 +254,7 @@ The following code sets the `x` component of the `Cd` attribute to the value of 
 @Cd.x = @whitewater;
 
 ```
-
-&nbsp;
+<br/>
 
 #### Using vellum as skin
 
@@ -264,7 +263,7 @@ Grouped some loops of points around the desired areas of your model (geometry). 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize%20(6).gif" width="60%">.
 
 
-&nbsp;
+<br/>
 
 
 #### Enforce Prototypes	
@@ -276,7 +275,7 @@ temp += {0.1, 0.2, 0.3};
 
 ```
 
-&nbsp;
+<br/>
 
 #### Get transform of objects with optransform
 
@@ -285,8 +284,7 @@ matrix m = optransform('/obj/cam1');
 @P *=m;
 
 ```
-
-&nbsp;
+<br/>
 
 #### optransform to do a motion control style camera
 
@@ -310,11 +308,11 @@ matrix3 m_rot = matrix3(m);
 
 ```
 
-&nbsp;
+<br/>
 
 ## Pyro
 
-&nbsp;
+<br/>
 
 #### Control Pyro based on vex rules
 
@@ -338,7 +336,7 @@ v@vel = normalize(v@vel)* min(length(v@vel),maxspeed);
 ```
 
 
-&nbsp;
+<br/>
 
 ## Dynamic clouds and volumes
 
@@ -373,18 +371,17 @@ Simplex noise             (string value "xnoise")
 Zero Centered Perlin      (string value "correctnoise")
 
 ```
-
-&nbsp;
+<br/>
 
 # Noise and render speed: Mantra
 
 Reduce noise and speed up your renders: A proven method for Mantra
 
-&nbsp;
+<br/>
 
 ## Reduce and eliminate noise
 
-&nbsp;
+<br/>
 
 #### Mantra limit parameters
 
@@ -392,7 +389,7 @@ These controls are on the Limits tab of the Mantra render node. I would leave th
 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/BasicRayTracing_1.png" width="60%">.
 
-&nbsp;
+<br/>
 
 #### Understanding the difference between direct and indirect lighting. 
 
@@ -401,7 +398,7 @@ Indirect Rays can be described as rays which deal with objects and their surface
 Direct lighting gives you a darker image with more pronounced shadows.
 
 
-&nbsp;
+<br/>
 
 #### Eliminate firefly noise
 
@@ -414,7 +411,7 @@ The Fix: The best way to remove those white dots is to avoid using sun lights al
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3103).jpg" width="100%">.
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3101).jpg" width="100%">.
 
-&nbsp;
+<br/>
 
 #### Reduce noise significantly
 
@@ -425,14 +422,13 @@ The Fix: Switch the "rendering node" dropdown option to "raytracing" or "direct 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3106).jpg" width="60%">. 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3108).jpg" width="60%">.
 
-&nbsp;
+<br/>
 
 #### Results
 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3102).jpg" width="60%">.
 
-
-&nbsp;
+<br/>
 
 #### Python scripting hou 
 
@@ -443,8 +439,8 @@ render(frame_range=(), res=(), output_file=None, output_format=None,
 to_flipbook=False, quality=2, ignore_inputs=False, method=RopByRop, ignore_bypass_flags=False, ignore_lock_flags=False, verbose=False, output_progress=False)
 
 ```
- 
-&nbsp;
+
+<br/>
 
 
 ## Speed-up Render time
@@ -513,7 +509,7 @@ plastic(
 
 ```
 
-&nbsp;
+<br/>
 
 #### Dicing
 
@@ -521,7 +517,7 @@ This is the most important part, the part you need to remember. The absolute bes
 
 Dicing > Shading Quality: Dial your number to as low as 0.25
 
-&nbsp;
+<br/>
 
 #### Pixel samples
 
@@ -529,13 +525,13 @@ Keep in mind the higher these two numbers, the slower your render time will be. 
 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/Screenshot%20(3101)_render-setup.jpg" width="50%">.
 
-&nbsp;
+<br/>
 
 #### Max Ray samples
 
 Try 10, 100, or even 300. Make several renders tests. One of them could cost you a few minutes. I've had excellent results with 100.
 
-&nbsp;
+<br/>
 
 #### Noise level
 
@@ -543,13 +539,13 @@ In the physical world. The noise level of real film grains is 0.05 or 0.08. Nois
 
 I always select 0.07-0.05 for volumes, 0.05 for heavy scenes of all kind, and 0.03-0.01 when I can spare the time. With render images of 4k or 5k for resolution, going below 0.01 is silly. 
 
-&nbsp;
+<br/>
 
 #### Light quality
 
 All= 1. The default setting is good enough.
 
-&nbsp;
+<br/>
 
 #### Scholastic samples
 
@@ -557,7 +553,7 @@ Turn it on.
 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/VolumeSamplingStochastic.jpg" width="50%">.
 
-&nbsp;
+<br/>
 
 #### Refract limit
 
@@ -565,7 +561,7 @@ Turn it on.
 
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/RefractLimit.jpg" width="50%">.
 
-&nbsp;
+<br/>
 
 #### PBR shading
 
@@ -580,7 +576,7 @@ You can add bsdf values together and scale them by vectors or floats. Multiplyin
 
 ```
 
-&nbsp;
+<br/>
 
 #### Shading quality multiplier
 
@@ -595,11 +591,11 @@ shadingquality = object:shadingquality * renderer:shadingfactor
 
 ```
 
-&nbsp;
+<br/>
 
 # Notes
 
-&nbsp;
+<br/>
 
 
 #### Reading and modifying the voxel value
@@ -609,7 +605,7 @@ shadingquality = object:shadingquality * renderer:shadingfactor
     @density += sin(@P.x)
     
     
-&nbsp;
+<br/>
 
 #### Packed Primitives
 
@@ -636,7 +632,7 @@ vector mapToScreen(vector NDC_P)
 
 ```
 
-&nbsp;
+<br/>
 
 #### Blurring attributes with vex and point clouds
 
@@ -681,7 +677,7 @@ int mypc = pcopen(0, 'P', @P, 1, 8);
 ### To do
 Any suggestions? questions? Please ask.
 
-&nbsp;
+<br/>
 
 ### Resources
 
