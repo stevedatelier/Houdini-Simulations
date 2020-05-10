@@ -415,7 +415,7 @@ The Fix: The best way to remove those white dots is to avoid using sun lights al
 
 #### Reduce noise significantly
 
-When using HDR/Envlight, you surround the entirety of your scene with a light that has a very limited sample count and unfortunately some brights spots which Mantra can't always calculate. 
+When using HDR/Envlight, you surround the entirety of your scene with a light that has a very limited sample count and unfortunately some bright spots which Mantra can't always calculate. 
 
 The Fix: Switch the "rendering node" dropdown option to "raytracing" or "direct lighting" in your envlight node. Note: Only one of them will have the desired results, so make two render tests.
 
@@ -513,7 +513,7 @@ plastic(
 
 #### Dicing
 
-This is the most important part, the part you need to remember. The absolute best way to significantly reduce render times is by adjusting **shading quality**. The lower the number, the faster your render. There were no noticeable differences in my 2K rendrers after I lowered shading quality. 
+This is the most important part, the part you need to remember. The absolute best way to significantly reduce render times is by adjusting **shading quality**. The lower the number, the faster your render. There were no noticeable differences in my 2K renders after I lowered shading quality. 
 
 Dicing > Shading Quality: Dial your number to as low as 0.25
 
