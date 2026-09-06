@@ -2,10 +2,13 @@
 
 ## Download files here: 
 
+Tire scene
+https://drive.google.com/drive/folders/1s-i9RmJR3IgT8GOqHQgF4aSDx3kdcYOZ?usp=drive_link
+
 Ocean yatch
 https://drive.google.com/drive/folders/1Bwzgb4-7k3sqpJCi0Hlzv2ILfuyfeF8q?usp=sharing
 
-Tank + tire scene
+Tank
 https://drive.google.com/drive/folders/1lnIowP5ZfFQ50kSmQljCPP14hcoYeUJx?usp=drive_link
 
 
