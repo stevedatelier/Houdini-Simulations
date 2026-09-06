@@ -1,5 +1,14 @@
 # Houdini Physical Simulations
 
+## Download files here: 
+
+Ocean yatch
+https://drive.google.com/drive/folders/1Bwzgb4-7k3sqpJCi0Hlzv2ILfuyfeF8q?usp=sharing
+
+Tank + tire scene
+https://drive.google.com/drive/folders/1lnIowP5ZfFQ50kSmQljCPP14hcoYeUJx?usp=drive_link
+
+
 ## Find my notes and some of the code snippets, setups I used to create volumes, oceans, fluid and more inside SideFX Houdini
 
 <p align="right"><small><sup>by Steve d'Atelier</sup></small></p>
