@@ -11,6 +11,9 @@ https://drive.google.com/drive/folders/1Bwzgb4-7k3sqpJCi0Hlzv2ILfuyfeF8q?usp=sha
 Tank
 https://drive.google.com/drive/folders/1lnIowP5ZfFQ50kSmQljCPP14hcoYeUJx?usp=drive_link
 
+Jet Pursuit
+https://drive.google.com/drive/folders/1Et-9ANrhHRNNJhtESRagAWBO09wnBvjM?usp=sharing
+
 
 ## Find my notes and some of the code snippets, setups I used to create volumes, oceans, fluid and more inside SideFX Houdini
 
