@@ -20,6 +20,37 @@ https://drive.google.com/drive/folders/1Et-9ANrhHRNNJhtESRagAWBO09wnBvjM?usp=sha
 <p align="right"><small><sup>by Steve d'Atelier</sup></small></p>
 
 
+## Vellum grains
+
+#### Vellum Constraints
+
+After the `grain_constraints` node you need the vellum_constrains node with `target_group_typ`e set to points and `constraint_type` set to glue.
+
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize_Muddy.gif" width="60%">.
+
+
+<br/>
+
+#### Glue
+
+Each point will search for a nearby point that is not a member of its own piece. It will construct a distance constraint holding it to that point. This is useful for building systems that automatically glue together by proximity, especially when combined with breaking.
+
+<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize-2.gif" width="60%">.
+
+POPGrains/get_neighbours:
+```
+    // Do not potentiall collide with explicit constraints
+    // to allow us to over-pack particles.
+    if (!explicitcollide && find(@ec, ptj) >= 0)
+        continue;
+    
+    append(neighbors, ptj);
+    
+ ```
+
+
+<br/>
+
 ### How to use
 
 You can clone, or directly download this repository. It contains examples [...].hip and vex/myLib.h files which are helpful for you to expand on and improve. I recommend you check the README.md file for helpful comments and explanations. Where necessary I include related functions from myLib.h or attach screenshots. I have logged some simulations there as well as important tips on how to significantly reduce noise in your render and greatly improve Mantra rendering speed. Some of the examples listed are influenced by real-world physical observations. 
@@ -65,39 +96,6 @@ You can clone, or directly download this repository. It contains examples [...].
 * [<small><sup>Blurring attributes with vex and point clouds</sup></small>](#Blurring-attributes-with-vex-and-point-clouds)
 
 
-
-
-## Vellum grains
-
-#### Vellum Constraints
-
-After the `grain_constraints` node you need the vellum_constrains node with `target_group_typ`e set to points and `constraint_type` set to glue.
-
-<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize_Muddy.gif" width="60%">.
-
-
-<br/>
-
-#### Glue
-
-Each point will search for a nearby point that is not a member of its own piece. It will construct a distance constraint holding it to that point. This is useful for building systems that automatically glue together by proximity, especially when combined with breaking.
-
-<img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize-2.gif" width="60%">.
-
-POPGrains/get_neighbours:
-```
-    // Do not potentiall collide with explicit constraints
-    // to allow us to over-pack particles.
-    if (!explicitcollide && find(@ec, ptj) >= 0)
-        continue;
-    
-    append(neighbors, ptj);
-    
- ```
-
-
-<br/>
-    
 ## Waves
 
 #### Wave characteristics
@@ -140,7 +138,6 @@ These characteristics are important in determining the size of waves, the speed 
 
 ##### Before
 <img src="https://github.com/stevedatelier/Houdini-Simulations/blob/master/img/ezgif.com-optimize%20(8).gif" width="60%">.
-
 
 
 ##### After
@@ -461,7 +458,6 @@ to_flipbook=False, quality=2, ignore_inputs=False, method=RopByRop, ignore_bypas
 ## Speed-up Render time
 
 
-
 #### Opt for Physically Based Rendering
 
 Physically based rendering/raytracing (PBR) 
@@ -701,6 +697,5 @@ For more on Vex syntax check SideFX wiki page http://www.tokeru.com/cgwiki/?titl
 You'll find additonal examples on Odforce.net.
 
 Remember that the more precise you are, the more beautiful your simulations will be. The possibilities are limitless. To be successful, focus on reduction. This means that you want to find solutions that will save you time. Let yourself be inspired by the wonderful world of physics. There are several courses and readings on the Internet to help you understand the importance of the laws of nature and the laws of gravity - I know what you think *. "Physicists have discovered that gravity is not a force, so what should I worry about it?"* Well to that I answer, until someone solves the problem of quantum gravity, you're stuck with Einstein's general relativity, so *just work with it!
-
 
 
